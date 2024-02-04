@@ -1,18 +1,29 @@
 import sys
-import os
-import pandas as pd 
-import numpy as np 
-from src.logger import logging
-from src.exception import CustomException
+from dataclasses import dataclass
 
-from sklearn.preprocessing import LabelEncoder
+import numpy as np 
+import pandas as pd
+from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder,StandardScaler
+
+from src.exception import CustomException
+from src.logger import logging
+import os
+
+@dataclass
+class DataTransformationConfig:
+    preprocessor_obj_file_path=os.path.join('data',"proprocessor.pkl")
 
 
 class DataTransformation(self):
     def __init__(self):
-        return null
+        self.data_transformation_config=DataTransformationConfig()
+
     def datatransformation(self):
         try:
             logging.info("Dropping the mp_commoditysource column")
+            
         except Exception as e:
             raise CustomException(e,sys)
