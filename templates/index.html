@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        form {
+            width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Data Form</h2>
+    <form action="/submit-data" method="POST">
+        <label for="adm0_id">adm0_id:</label>
+        <input type="text" id="adm0_id" name="adm0_id">
+        
+        <label for="adm1_id">adm1_id:</label>
+        <input type="text" id="adm1_id" name="adm1_id">
+        
+        <label for="cm_id">cm_id:</label>
+        <input type="text" id="cm_id" name="cm_id">
+        
+        <label for="pt_id">pt_id:</label>
+        <input type="text" id="pt_id" name="pt_id">
+        
+        <label for="mkt_id">mkt_id:</label>
+        <input type="text" id="mkt_id" name="mkt_id">
+        
+        <label for="mp_year">mp_year:</label>
+        <input type="text" id="mp_year" name="mp_year">
+        
+        <input type="submit" value="Predict Price">
+    </form>
+    <h2>
+        The Prediction is {{results}}
+    </h2>
+</body>
+</html>
