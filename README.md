@@ -36,10 +36,10 @@ The predictive model developed in this project achieves an accuracy of 92% in pr
 
 ### Repository Structure
 
-- **data/**: Contains the dataset used in the project.
-- **notebooks/**: Jupyter notebooks containing the data preprocessing, exploratory data analysis, and modeling code.
-- **results/**: Stores the results of the predictive model.
-- **docs/**: Documentation files, including README and project report.
+- **src/**: Contains the .
+- **templates/**: Contains the web Deployment html files.
+- **requirements/**: Contains the required libraries.
+- **app.py/**: python file to run the project.
 
 ### Usage
 
