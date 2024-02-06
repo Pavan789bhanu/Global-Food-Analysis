@@ -36,7 +36,7 @@ The predictive model developed in this project achieves an accuracy of 92% in pr
 
 ### Repository Structure
 
-- **src/**: Contains the .
+- **src/**: Contains the Data ingestion, Data transformation, Data modelling files and predictive pipelines.
 - **templates/**: Contains the web Deployment html files.
 - **requirements/**: Contains the required libraries.
 - **app.py/**: python file to run the project.
