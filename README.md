@@ -63,6 +63,10 @@ The predictive model developed in this project achieves an accuracy of 92% in pr
 
 4. Run the app.py to see the working of the project.
 
+   ```
+   python app.py
+   ```
+
 ### Contributors
 
 - Pavan Kumar Malasani
