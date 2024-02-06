@@ -46,13 +46,13 @@ The predictive model developed in this project achieves an accuracy of 92% in pr
 1. Clone this repository:
 
    ```
-   git clone https://github.com/Pavan789bhanu/global-food-analysis.git
+   git clone https://github.com/Pavan789bhanu/Global-Food-Analysis.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd global-food-analysis
+   cd Global-Food-Analysis
    ```
 
 3. Install the required dependencies:
